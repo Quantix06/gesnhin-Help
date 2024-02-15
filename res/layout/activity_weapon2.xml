@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/testbackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/menuBas2"
+        android:layout_width="409dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/blueMenu"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/persoimg2"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/perso"
+        android:contentDescription="image" />
+
+    <TextView
+        android:id="@+id/persotxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:text="Personnage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/persoimg2" />
+
+    <ImageView
+        android:id="@+id/Weaponimg2"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plusButton2"
+        app:layout_constraintStart_toEndOf="@+id/persoimg2"
+        app:srcCompat="@drawable/weapons"
+        android:contentDescription="image" />
+
+    <TextView
+        android:id="@+id/weaponTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="50dp"
+        android:text="Armes"
+        app:layout_constraintEnd_toStartOf="@+id/plusButton2"
+        app:layout_constraintStart_toEndOf="@+id/persotxt2"
+        app:layout_constraintTop_toBottomOf="@+id/Weaponimg2" />
+
+    <ImageView
+        android:id="@+id/plusButton2"
+        android:layout_width="55dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/plusbutton"
+        android:contentDescription="image" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:text="Equipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plusButton2" />
+
+    <ListView
+        android:id="@+id/listWeapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuBas2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
